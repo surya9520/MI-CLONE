@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="banner-img"></div>
+    <!---------------------------------------------Nav-bar------------------------------------------------------------------>
+
+    <div class="nav">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/mi-logo-removebg-preview.png" alt="">
+                <h1>Xiaomi Account</h1>
+            </div>
+            <ul class="nav-item">
+                <li>User Agreement</li>
+                <li>Privacy Policy</li>
+                <li>Need help?</li>
+                <li>Select Your Language</li>
+            </ul>
+        </div>
+    </div>
+
+    <!---------------------------------------------LOGIN-CARD---------------------------------------------------------------->
+    <div class="login-container">
+        <div class="login-card">
+            <div class="sign-content">
+                <h1 onclick="signin()" >Sign in</h1>
+                <h1 onclick="signup()" >Sign up</h1>
+            </div>
+            <div id="sign-in-content">
+                <div class="input">
+                    <input type="text" placeholder="Email/Phone/Xiomi Account">
+                    <input type="text" placeholder="Password">
+                    <div class="sign-in" >
+                        sign in
+                    </div>
+                    <div class="sign-in google">
+                        <span class="google-btn"><img src="images/google.png" alt=""></span>
+                        <p>Sign in With Google</p>
+                    </div>
+                </div>
+                <div class="forget-pass">
+                    <P>forget Password?</P>
+                    <p>sign-in using phone <br>number</p>
+                </div>
+                <p class="rights">Xiaomi Inc., All rights reserved</p>
+            </div>
+            <div id="sign-up-content">
+                <div class="input">
+                    <input type="text" placeholder="Email/Phone/Xiomi Account">
+                    <input type="text" placeholder="Password">
+                    <input type="text" placeholder="Region">
+                </div>
+                <input class="check" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label class="terms" for="vehicle1">I've read and agreed to Xiaomi's User Agreement and Privacy
+                    Policy.</label>
+           
+            <div class="sign-in up">
+                sign up
+            </div>
+            <p class="rights">Xiaomi Inc., All rights reserved</p>
+        </div>
+        </div>
+    </div>
+<script src="login.js"></script>
+</body>
+
+
+</html>

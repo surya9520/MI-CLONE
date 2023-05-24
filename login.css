@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
+}
+.banner-img {
+    height: 100vh;
+    width: 25VW;
+    display: inline-block;
+    background-image: url("https://cdn.web-global.fds.api.mi-img.com/mcfe--mi-account/static/static/media/banner.92c693b4..jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+.nav{
+    display: inline-block;
+    position: absolute;
+}
+.nav-bar{
+    margin:1.5vw 0 0 2vw;
+    color:#898989;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 71.8vw;
+}
+.logo{
+    width: 25vw;
+    display: flex;
+}
+.nav-bar img{
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+.nav-bar h1{
+    font-weight: 450;
+    font-size: 2.5vw;
+    color: #bfbfbf;
+}
+.nav-item{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 3vw;
+    align-items: center;
+    font-size:1.2vw ;
+}
+.nav-item li{
+    cursor: pointer;
+    transition: color 0.2s; 
+}
+.nav-item li:hover{
+    color: #ff5c00;
+}
+/* --------------------------LOGIN-CONTAINER-------------------------------------------------------------------------- */
+.login-container{
+    display: inline-block;
+    position: absolute;
+    top: 16%;
+    right: 25%;
+}
+.login-card{
+    width: 33vw;
+    height: 42vw;
+    background-color: #191919;
+    position: relative;
+    top:4.8%;
+    left: 7%;
+    border-radius: 4px;
+    padding: 2vw 3.5vw 0 3.5vw ;
+}
+#sign-in-content{
+    display:block;
+}
+#sign-up-content{
+    display:none;
+}
+.sign-content{
+    display: flex;
+}
+.sign-content h1{
+    margin-right: 2vw;
+    font-weight: 400;
+    font-size: 2.3vw;
+    color: #cccccc;
+    cursor: pointer;
+}
+.sign-content h1:hover::after{
+    content: "";
+    width: 6vw;
+    height:0.2vw;
+    background-color:#ff5c00;
+    position: absolute;
+    transform: translatex(-6vw);
+    top: 5vw;
+    border-radius: 2.5vw;
+}
+.input{
+    margin-top: 3vw;
+}
+.input input{
+    height: 4vw;
+    width: 25vw;
+    border: none;
+    outline: none;
+    background-color: #404040;
+    margin-bottom: 1.5vw;
+    border-radius: 4px;
+    padding: 1vw 1vw;
+    color: #bfbfbf;
+    font-size: 1.5vw;
+    box-shadow: 0 20px 50px 0 hsla(0,0%,60%,.1);
+}
+
+.sign-in{
+    height: 4vw;
+    width: 25vw;
+    background-color: #ff6900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    border-radius: 4px;
+    margin-bottom: 1.5vw;
+    cursor: pointer;
+    color: #ffffff
+}
+.google{
+    background-color: #4285f4;
+    justify-content: start;
+    padding: 0.05vw 0.1vw;
+    color: #fff;
+}
+.google-btn{
+    background-color: #fff; 
+    padding: 0.25vw 0.50vw; 
+    border-radius: 3px; 
+    height:3.8vw; 
+    margin-right: 2vw;
+}
+.google-btn img{
+    width:3.1vw;
+}
+.google p{
+    font-weight: 350;
+}
+.forget-pass{
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    color: #ff5c33;
+    font-size: 1.24vw;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+.rights{
+    color: #a6a6a6 ;
+     margin-top: 5vw; 
+     font-size: 1.2vw;
+}
+.check{
+    background-color: #191919;
+}
+.terms{
+    color: #cccccc;
+}
+.up{
+margin-top: 2vw;
+}
+/* <-------------------------------------------------Media-query--------------------------------------------------------> */
+@media only screen and (max-width:780px) {
+    body{
+        background-color: black;
+    }
+    
+    .banner-img{
+        display: none;
+    }
+    
+    .logo{
+        width: 60vw;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 2vw;
+    }
+    .nav-bar img{
+        width: 10vw;
+        height: 10vw;
+        margin-right: 1vw;
+    }
+    .login-card{
+        width: 80vw;
+        height: 100vw ;
+        left: 15vw;
+        top: 12vw;
+        padding: 5vw 10vw 10vw 10vw;
+
+    }
+    .sign-content h1{
+      font-size: 5vw;
+      margin-right: 5vw;
+    }
+    .input input{
+        width: 61.37vw;
+        height: 10.37vw;
+        font-size: 3.5vw;
+        margin-top: 3.5vw;
+    }
+    .nav-item{
+        width: 90vw;
+        position: absolute;
+        top: 20vw;
+        left:8vw;
+        font-size: 3vw;
+        margin-bottom: 4vw;
+    }
+    .nav-bar h1{
+    font-size: 4.5vw;
+    }
+    .sign-in{
+        width: 61.37vw;
+        height: 10.37vw;
+        font-size: 3.5vw;
+        margin-top: 3.5vw;
+    }
+    .google-btn{
+        height: 10vw;
+        width: 10vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+    }
+    .google-btn img{
+        width: 6.5vw;
+    }
+    .forget-pass{
+        width: 100%;
+        font-size: 3.5vw;
+        margin-top: 4vw;
+    }
+    .rights{
+        margin-top: 8.5vw;
+        font-size: 3.5vw;
+    }
+}

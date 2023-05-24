@@ -1,0 +1,73 @@
+html{
+    background-color: #f7f7f7;
+}
+
+.product-card{
+    height: 303px;
+    width: 294px; ;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    margin: auto;
+    /* margin-top: 40px; */
+    position: relative;
+    
+}
+.product-card:hover{
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014; 
+}
+.card-content img{
+    position: absolute;
+ height: 10vw;
+ width: 10vw;
+ /* margin-left:8vw ; */
+ right: 0;
+ top: 5vw;
+
+}
+.rate{
+    margin-left: 2vw;
+    position: absolute;
+    bottom: 1.6vw;
+    font-size: 1.5vw;
+    max-height: 4vw;
+    line-height: 1.2vw;
+}
+.rate strong{
+    /* display: inline-block; */
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    font-weight: 600;
+}
+.rate del{
+    color: #898989;
+    font-size: 1vw;
+    margin-top: 0;
+    margin-left: 0.2vw; 
+}
+.cost{
+    margin-top: 0.5vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-left: 0.2vw;
+}
+.name{
+    position: absolute;
+    margin-left: 2vw;
+    top: 2.5vw;
+ }
+ .name h2{
+    margin-top: 0;
+    margin-bottom: 0.55vw;
+    font-size: 1.4vw;
+    font-weight: 800;
+ }
+.information{
+    background-color: #ff69001a;
+    color: orangered;
+    max-width: 60px;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+   
+}

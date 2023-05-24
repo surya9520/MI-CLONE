@@ -1,0 +1,23 @@
+.product-card{
+    height: 303px;
+    width: 294px; ;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    margin: auto;
+    /* margin-top: 40px; */
+    position: relative;
+    
+}
+.product-card:hover{
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014; 
+}
+.card-content img{
+    position: absolute;
+ height: 10vw;
+ width: 10vw;
+ /* margin-left:8vw ; */
+ right: 0;
+ top: 5vw;
+
+}

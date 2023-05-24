@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7;
+}
+.prd-card{
+    background-color: #fff;
+    padding-left:5vw ;
+}
+.pr-img img{
+    height: 90vw;
+    width: 100%;
+}
+.pricee{
+    display: flex;
+    width: 40vw;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.pricee strong{
+    font-size: 8vw;
+    margin:0 1.5vw 0 1.5vw;
+    font-weight: 500;
+}
+.pricee p{
+    font-size: 5vw;
+    font-weight: 200;
+    color: #191919;
+}
+.pricee del{
+    font-size: 5vw;
+    color: #898989;
+}
+.p-name{
+    font-size: 10vw;
+    margin-top: 3.5vw;
+    font-weight: 500;
+}
+.cred-card{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+    justify-content: space-between;
+    padding: 5vw 1vw 5vw 5vw;
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014; 
+}
+.cred-card p{
+    margin-bottom: 1.5vw;
+    color: #898989;
+}
+.cred-card i{
+    font-size: 5vw;
+    margin-right: 3vw;
+}
+.storagee{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2.5vw;
+    padding: 5vw 1vw 5vw 5vw;
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014; 
+}
+.firstt{
+    display: flex;
+    margin-bottom: 6vw;
+}
+.firstt p{
+    margin-right: 6vw;
+    font-size: 5vw;
+}
+.secondd{
+    display: flex;
+}
+.secondd .box{
+    margin-right: 5vw;
+    font-size: 5vw;
+}
+.reviewss{
+    display: flex;
+    justify-content: space-between;
+    padding:5vw 5vw 5vw 5vw;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2.5vw;
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014; 
+    font-size: 5vw;
+    margin-bottom: 30vw;
+}
+.nrev p{
+    font-size: 3.5vw;
+    color: #898989;
+    font-weight: 400;
+}
+.buyy{
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    height: 20vw;
+    margin-top: 5vw;
+    position: fixed;
+    bottom: 0.2vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014; 
+    padding: 5vw 5vw 5vw 5vw;
+}
+.buyy .iconss i{
+    font-size: 8vw;
+    margin-right: 5vw;
+}
+.buyy span{
+    background-color: #000;
+    color: #fff;
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}

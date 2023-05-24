@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    background: #f7f7f7;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #191919;
+    font-size: 16px;
+    overflow-x: hidden;
+
+}
+.bottle{
+    position: absolute;
+    background-color: red;
+    color: white;
+    height: 1.2vw;
+    width: 1.5vw;
+    border-radius: 16px;
+    top: -0.2vw;
+    left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5vw;
+}
+
+/* <!----------------------------------------------Navbar-Section----------------------------------------------------------->*/
+.nav-bar {
+    height: 4vw;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 0.4rem 1rem 0 #1919190f;
+    position: fixed;
+    z-index: 200;
+}
+
+.nav-items {
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mi {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.mi-logo {
+    height: 2.6vw;
+    width: 2.6vw;
+}
+
+.first {
+    display: flex;
+    width: 60vw;
+    height: 100%;
+}
+
+#first {
+    width: 60vw;
+}
+
+#first li {
+    margin-right: 1.4vw;
+
+}
+
+.divider {
+    width: 4vw;
+    margin-right: 3vw;
+
+}
+
+.sec {
+    width: 13vw;
+    height: 100%;
+    margin-right: 1vw;
+}
+
+.sec ul li {
+    margin-right: 1.8vw;
+}
+
+.logo {
+    height: 100%;
+    width: 23vw;
+    /* margin-right: -3.5vw; */
+}
+
+.logo ul li {
+    height: 2.7vw;
+    width: 2.7vw;
+    padding: 4px 2px 2px 2px;
+    /* margin-left:8px; */
+    margin-right: 1.8vw;
+    border-radius: 50%;
+    font-size: 1.4vw;
+    text-align: center;
+    /* text-justify: center;*/
+    transition: background-color 0.3s;
+}
+
+.logo ul li:hover {
+
+    background: #cccccc;
+    
+
+}
+
+#first,
+#second,
+#third {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    font-size: 1.15vw;
+    font-weight: 400;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+    letter-spacing: normal;
+    color: #4d4545;
+
+}
+
+.nav-items ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+.del {
+    padding: 1.9vw 0.5vw 1.3vw 0.05vw;
+    /* background-color: palegoldenrod; */
+}
+
+.line img {
+    height: 30px;
+    width: 30px;
+}
+
+.line:hover {
+    color: #ff6900;
+}
+
+.bars {
+    display: none;
+}
+
+/* <-----------------------------------Seaking-bar-----------------------------------------------------------------------> */
+#phone {
+    position: absolute;
+    z-index: 100;
+    height: 0vw;
+    width: 100vw;
+    background-color: #f7f7f7;
+    visibility: hidden;
+    left: -12vw;
+    top: 2.89vw;
+    transition: all 0.05s linear;
+
+}
+
+#phone ul {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    left: 10vw;
+    font-size: 500000px;
+
+}
+
+#xiomi {
+    margin: 2vw 2vw 0 29vw;
+}
+
+#redmi {
+    margin: 2vw 0 0 -32px;
+}
+
+#phone ul li:hover {
+    color: #ff6900;
+}
+
+#seprator {
+    height: 1vw;
+    width: 2px;
+    background-color: #4d4545;
+    margin: 3vw 40px 0 0;
+}
+
+#tv {
+    position: absolute;
+    z-index: 100;
+    height: 0vw;
+    width: 100vw;
+    background-color: #f7f7f7;
+    display: flex;
+    font-size: 10px;
+    left: -16vw;
+    transition: all 0.12s ease-in;
+    top: 2.89vw;
+
+}
+
+#tv ul {
+    /* position: absolute; */
+    list-style: none;
+    width: 20vw;
+    line-height: 40px;
+    visibility: hidden;
+    transition: visibility 0.15s ease-in-out;
+}
+
+#tv ul li h3 {
+    width: 12vw;
+    font-weight: 600;
+}
+
+#tv ul li {
+    /* display: inline-block; */
+    width: 10vw;
+    margin: 0 !important;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+/* <----------------------------------Crousel-Section------------------------------------------------------------------> */
+#slider1,
+#slider2,
+#slider3 {
+    height: 35vw;
+    position: relative;
+    width: 100vw;
+
+}
+
+.slider-content {
+    width: 32vw;
+    position: absolute;
+    top: 2vw;
+    left: 7vw;
+    line-height: 2.9vw;
+    /* font-size: 2vw; */
+
+}
+
+.content-container {
+    position: absolute;
+    left: 6vw;
+    top: 5vw;
+}
+
+.slider-content h1 {
+    font-size: 3vw;
+    margin-left: -2vw;
+}
+
+.slider-content p {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.price-banner {
+    font-size: 2vw;
+    margin-left: -5vw;
+}
+
+.banner-action {
+    margin-top: 1.5rem;
+    margin-left: -5.3vw;
+    cursor: pointer;
+}
+
+.buy {
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    color: #191919;
+    padding: 2px 10px 5px 10px;
+    opacity: 0.;
+    margin-right: 0.5vw;
+}
+
+.learn {
+    font-size: 1rem;
+    background: transparent;
+    border: 0.5px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    padding: 2px 10px 5px 10px;
+}
+
+/* <----------------------------------Offer-Banner----------------------------------------------------------------------> */
+.offer-banner {
+    margin: auto;
+    width: 100vw;
+    height: 15vw;
+    background-image: url(images/bank.gif);
+    background-size: contain;
+}
+
+/* <--------------------------------------------------Offers-Container----------------------------------------------------> */
+
+.offer {
+    position: relative;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 2vw;
+
+}
+
+.offer img {
+    width: 100%;
+    height: 12vw;
+}
+
+.offer-content {
+    position: absolute;
+    top: 1.5vw;
+    left: 6vw;
+    color: #fff;
+}
+
+.offer-content h2 {
+    font-weight: 600;
+    font-size: 2vw;
+    margin-bottom: 0px !important;
+}
+
+.offer-content p {
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-bottom: 1px !important;
+
+}
+
+.offer-content .buy {
+    margin-top: 0;
+    font-size: 1.1vw;
+}
+
+/* <------------------------------------------Product-Card---------------------------------------------------------> */
+.products-container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.product-card {
+    height: 19.72vw;
+    width: 19.14vw;
+    ;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 0.8vw;
+
+}
+
+.product-card:hover {
+    box-shadow: 0 0.3125vw 0.72917vw 0 #00000014;
+}
+
+.card-content img {
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    right: 0;
+    top: 5vw;
+
+}
+
+.rate {
+    margin-left: 2vw;
+    position: absolute;
+    bottom: 2vw;
+    font-size: 1.5vw;
+    max-height: 4vw;
+    line-height: 1.2vw;
+}
+
+.rate strong {
+    /* display: inline-block; */
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    font-weight: 600;
+}
+
+.rate del {
+    color: #898989;
+    font-size: 1vw;
+    margin-top: 0;
+    margin-left: 0.2vw;
+}
+
+.cost {
+    margin-top: 0.5vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-left: 0.1vw;
+}
+
+.name {
+    position: absolute;
+    margin-left: 2vw;
+    top: 2.5vw;
+}
+
+.name h2 {
+    margin-top: 0;
+    margin-bottom: 0.55vw;
+    font-size: 1.4vw;
+    font-weight: 800;
+}
+
+.information {
+    background-color: #ff69001a;
+    color: orangered;
+    font-size: 1vw;
+    max-width: 3.90vw;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+
+}
+
+/* <-------------------------------------------FOOTER-SECTION-------------------------------------------------------------> */
+.footer{
+    background-color: #191919;
+    margin-top: 3vw;
+    color: #898989;
+    width: 100%;
+    height: 45rem;
+    padding: 2px;
+    display: block;
+    /* overflow-y: hidden; */
+}
+.footer-container {
+
+    display: flex;
+    justify-content: space-evenly; 
+    padding-top: 5vw;
+}
+
+.footer-container ul {
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 1.2vw;
+}
+.footer-container ul li{
+    transition: color 0.1s;
+    cursor: pointer;
+}
+.footer-container ul li:hover{
+color: #fff;
+}
+
+.social-logo {
+    font-size: 2.3vw;
+}
+
+.email input {
+    background-color: #191919;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    width: 20vw;
+    height: 3.5vw;
+    padding: 0.5vw;
+    color: #fff;
+    font-size: 1.5vw;
+}
+.application{
+    border: 1.2px solid #fff; 
+    border-radius: 16px;
+    margin-top: 2vw;
+}
+.play-store{
+    display: flex;  
+    padding: 1vw 1vw 1vw 1vw; 
+    justify-content: space-between; 
+    width: 30vw; 
+}
+.heading{
+    font-size: 18px;
+    color: #fff;
+}
+.copyright{
+    font-size: 18px;
+    color: #fff;
+    margin-left:100px;
+    margin-top: 1.5vw;
+}
+/* -------------------------------------------------RESPOSIVE-FOOTER---------------------------------------------------- */
+.footer-res{
+    height: 110vw;
+    background-color: #191919;
+    padding: 5vw 5vw 0 5vw;
+    color: #898989;
+    line-height: 12vw;
+    display: none;
+}
+
+.footer-res ul{
+    list-style: none;
+    padding: 0;
+}
+.social-logo-res{
+    font-size: 8vw;
+}
+.heading-res{
+    color: #fff;
+    font-size: 9vw;
+    font-weight: 900;
+}
+.email-res{
+    font-size: 5.5vw;
+    margin-bottom: 8vw;
+}
+.email-res input {
+    background-color: #191919;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    width: 100%;
+    height: 10.5vw;
+    padding: 15px;
+    color: #fff;
+}
+.play-icon{
+    display: flex;
+    width: 100%;
+    background-color: #dbdbdb;
+    color: #191919;
+    height: 13vw;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.line-res{
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin-top: 30px
+}
+.copyright-res{
+    font-size: 12px;
+    margin-top: 20px;
+}
+/* <-------------------------------------------------Media-Query--------------------------------------------------------> */
+@media only screen and (max-width:320px) {
+    .slider-content {
+        margin-left: -40px;
+    }
+
+}
+
+@media only screen and (max-width:650px) {
+
+    body {
+        font-size: 8px;
+    }
+
+    .first,
+    .sec {
+        display: none;
+    }
+
+    .bars {
+        display: inline-block;
+
+    }
+
+    .fa-bars {
+        font-size: 5.5vw;
+        position: relative;
+        left: -8vw;
+    }
+
+    .nav-bar {
+        height: 12vw;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    .mi-logo {
+        height: 8vw;
+        width: 8vw;
+        margin-left: 1vw;
+    }
+
+    .logo {
+        margin-right: 5vw
+    }
+
+    .logo ul {
+        width: 100%;
+    }
+
+    .logo ul li {
+
+        font-size: 5.9vw;
+        justify-content: space-between;
+        color: #4d4545;
+        margin-left: 6vw;
+        height: auto;
+        padding: 0;
+    }
+    .logo ul li:hover{
+  background-color: transparent;
+    }
+    .fa-solid{
+        color: red;
+    }
+    .fa-user {
+        display: none;
+    }
+    .bottle{
+        width: 5vw;
+        height: 3vw;
+        font-size: 1.5vw;
+        left: 3vw;
+    }
+
+    /* <-----------------------------------------Croussel-slider------------------------------------------------------------> */
+    #slider1,
+    #slider2,
+    #slider3 {
+        height: 80vw;
+    }
+
+    .content-container {
+        top: 1.5vw;
+        left: 16vw;
+        position: absolute;
+    }
+
+    .slider-content {
+        width: 300px;
+        top: -2vw;
+        left: -1vw;
+        line-height: 15.5px;
+    }
+
+    .slider-content h1 {
+        font-size: 7vw;
+        margin-right: -0.5rem;
+    }
+
+    .slider-content p {
+        font-size: 1rem;
+        /* margin-right: -1rem; */
+        line-height: 16px;
+    }
+
+    .price-banner {
+        font-size: 1.5rem;
+        margin-left: -5vw;
+        margin-right: -1rem;
+
+    }
+
+    .banner-action {
+        margin-right: -25px;
+    }
+
+    .power h1 {
+        line-height: 35px;
+    }
+
+    .power .banner-action {
+        margin-top: 0px;
+        margin-right: -20px;
+
+    }
+
+    .power .buy {
+        font-size: 1.2rem;
+    }
+
+    /* <------------------------------------------offer-banner---------------------------------------------------------> */
+    .offer img {
+        height: 38vw;
+    }
+
+    .offer-content {
+        top: 5vw;
+        left: 1vw;
+    }
+
+    .offer-content h2 {
+        margin-bottom: 1.8vw !important;
+        font-size: 5vw;
+    }
+
+    .offer-content p {
+        font-size: 3vw;
+        margin-bottom: 3vw !important;
+    }
+
+    .offer-content .buy {
+        font-size: 3vw;
+    }
+
+    #tv {
+        display: none;
+    }
+
+    .offer {
+        max-width: 95VW;
+    }
+
+    /* <------------------------------------------Product-Card---------------------------------------------------------> */
+    .product-card {
+        height: 40.72vw;
+        width: 45.14vw;
+        margin: auto;
+        margin-bottom: 1.8vw;
+        border-radius: 10px;
+        padding-right: 15px;
+    }
+
+    .product-card img {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .products-container {
+        width: 94vw;
+        /* background-color: palevioletred; */
+    }
+
+    .name h2 {
+        font-size: 5.5vw;
+    }
+
+    .information {
+        font-size: 3vw;
+        max-width: 13vw;
+    }
+
+    .rate {
+        bottom: 10vw;
+        line-height: 4vw;
+    }
+
+    .rate strong {
+        font-size: 4.2vw;
+    }
+
+    .cost {
+        font-size: 5vw;
+    }
+
+    .rate del {
+        font-size: 2.5vw;
+    }
+    /* <-------------------------------------footer------------------------------------------------------------------> */
+    .footer{
+        display: none;
+    }
+    .footer-res{
+        display: block;
+    }
+
+}
